@@ -31,7 +31,7 @@ a
 }
 a:hover
 {
-    color: #4290ae;
+    color: #4290ae!important;
 }
 h1, h2, h3, h4, h5, h6
 {
@@ -40,20 +40,37 @@ h1, h2, h3, h4, h5, h6
 }
 
 /*drawer*/
-#drawer-right {
+#drawer-right
+{
     position: fixed;
     right: 0;
     top: 0;
     bottom: 0;
-    background: #2B3E51;
+    background: rgba(35,35,35,0.72);
     width: 300px;
     padding: 20px;
     z-index: 999;
+    font-size: 135%;
 }
+#drawer-right a
+{
+    color: white;
 
+
+}
+#drawer-right .closeButton
+{
+    text-align: right;
+}
 #drawer-right h1, #drawer-right h2
 {
     color: white;
+    font: menu;
+}
+
+#drawer-right .nav
+{
+    list-style: none;
 }
 
 #drawer-right .nav-pills>li>a
