@@ -5,11 +5,7 @@
     margin: 0;
     padding: 0;
 }
-::selection
-{
-    background-color: #475B6F;
-    color: #fff;
-}
+
 html
 {
     overflow-y: scroll;
@@ -29,10 +25,10 @@ a
     color: #4da7ca;
     transition: all 0.4s;
 }
-a:hover
-{
-    color: #4290ae!important;
-}
+/*a:hover*/
+/*{*/
+    /*color: #4290ae!important;*/
+/*}*/
 h1, h2, h3, h4, h5, h6
 {
     margin: 0 0 15px 0;
@@ -40,23 +36,40 @@ h1, h2, h3, h4, h5, h6
 }
 
 /*drawer*/
+#menu-glass
+{
+    position: fixed;
+    right: -400px;
+    top: 0;
+    bottom: 0;
+    background: url(../img/head.jpg) fixed;
+    width: 300px;
+    padding: 20px;
+    z-index: 998;
+    font-size: 135%;
+    filter: blur(10px);
+    transition:  all 0.3s;
+}
 #drawer-right
 {
     position: fixed;
-    right: 0;
+    right: -400px;
     top: 0;
     bottom: 0;
-    background: rgba(35,35,35,0.72);
+    background: rgba(35,35,35,0.3);
     width: 300px;
     padding: 20px;
     z-index: 999;
     font-size: 135%;
+    transition:  all 0.3s;
 }
 #drawer-right a
 {
     color: white;
-
-
+}
+#drawer-right a:hover
+{
+    color: #4da7ca;
 }
 #drawer-right .closeButton
 {
@@ -66,11 +79,19 @@ h1, h2, h3, h4, h5, h6
 {
     color: white;
     font: menu;
+    font-size: 150%;
 }
 
 #drawer-right .nav
 {
     list-style: none;
+    font:  menu;
+    font-size: 139%;
+}
+
+#drawer-right .nav-pills>li
+{
+    line-height: 50px;
 }
 
 #drawer-right .nav-pills>li>a
@@ -95,6 +116,13 @@ h1, h2, h3, h4, h5, h6
 #drawer-right .social ul > li > a:hover
 {
     color: white;
+}
+#footer
+{
+    text-align: center;
+    color: white;
+    font: menu;
+    font-size: 84%;
 }
 
 /*header*/

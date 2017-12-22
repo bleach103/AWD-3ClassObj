@@ -3,12 +3,30 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <title>Juntao的摄影博客</title>
         <link href="img/icon.jpeg" ref="shortcut icon">
-        <link href="css/fontawesome-all.min.css" rel="stylesheet" type="text/css">
+        <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
         <link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script>
+            $(document).ready(function ()
+            {
+               $(".toggleDrawer").click(function ()
+               {
+                  $("#menu-glass").css("right","0px");
+                  $("#drawer-right").css("right","0px");
+               });
+                $(".closeButton").click(function ()
+                {
+                    $("#menu-glass").css("right","-400px");
+                    $("#drawer-right").css("right","-400px");
+                });
+            })
+        </script>
     </head>
     <body>
-    <div id="drawer-right">
+        <div id="menu-glass"></div>
+        <div id="drawer-right">
         <div class="closeButton">
             <a class="toggleDrawer" href="#"><i class="fa fa-times-circle fa-2x"></i></a>
         </div>
@@ -16,7 +34,7 @@
         <nav>
             <ul class="nav nav-pills nav-stacked">
                 <li>
-                    <a href="#wrapper"><i class="fa fa-home"></i> Home</a>
+                    <a href="index.html"><i class="fa fa-home"></i> 主页</a>
                 </li>
                 <li>
                     <a href="#portfolio"><i class="fa fa-bookmark"></i> Portfolio</a>
@@ -39,16 +57,17 @@
             </ul>
         </nav>
         <div class="social">
-            <h2>Stay Connected</h2>
+            <h2>联系我</h2>
             <ul>
                 <li><a href=""><i class="fa fa-facebook-square fa-3x"></i></a></li>
-                <li><a href=""><i class="fa fa-twitter-square fa-3x"></i></a></li>
-                <li><a href=""><i class="fa fa-tumblr-square fa-3x"></i></a></li>
-                <li><a href=""><i class="fa fa-google-plus-square fa-3x"></i></a></li>
+                <li><a href=""><i class="fa fa-github-square fa-3x"></i></a></li>
+                <li><a href=""><i class="fa fa-envelope-square fa-3x"></i></a></li>
+                <li><a href=""><i class="fa fa-instagram fa-3x"></i></a></li>
             </ul>
+            <p id="footer">Copyright HJT 2017</p>
         </div>
     </div><!-- #drawer-right -->
-    <div id="wrapper">
+        <div id="wrapper">
         <div id="header" class="header-wrapper">
             <div class="header-wrapper-inner">
                 <section class="top">
