@@ -3,11 +3,12 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-        <title>Juntao的摄影博客</title>
-        <link href="img/icon.jpeg" ref="shortcut icon">
+        <title>JunTao的摄影博客</title>
+        <link rel="shortcut icon" type="image/x-icon" href="img/icon.jpeg" />
         <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
         <link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
         <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/jquery.scrollTo.min.js"></script>
         <script>
             $(document).ready(function ()
             {
@@ -21,17 +22,21 @@
                     $("#menu-glass").css("right","-400px");
                     $("#drawer-right").css("right","-400px");
                 });
+                $('#scrollToContent').click(function(e){
+                    e.preventDefault();
+                    $.scrollTo("#portfolio", 1000, { offset:-($('#header .top').height()), axis:'y' });
+                });
             })
         </script>
     </head>
     <body>
-        <div id="menu-glass"></div>
+        <div id="menu-glass"></div><!-- #drawer-right background-->
         <div id="drawer-right">
-        <div class="closeButton">
+            <div class="closeButton">
             <a class="toggleDrawer" href="#"><i class="fa fa-times-circle fa-2x"></i></a>
         </div>
-        <h2>导航</h2>
-        <nav>
+            <h2>导航</h2>
+            <nav>
             <ul class="nav nav-pills nav-stacked">
                 <li>
                     <a href="index.html"><i class="fa fa-home"></i> 主页</a>
@@ -55,24 +60,24 @@
                     <a href="#contact"><i class="fa fa-phone-square"></i> Contact</a>
                 </li>
             </ul>
-        </nav>
-        <div class="social">
+            </nav>
+            <div class="social">
             <h2>联系我</h2>
             <ul>
-                <li><a href=""><i class="fa fa-facebook-square fa-3x"></i></a></li>
-                <li><a href=""><i class="fa fa-github-square fa-3x"></i></a></li>
-                <li><a href=""><i class="fa fa-envelope-square fa-3x"></i></a></li>
-                <li><a href=""><i class="fa fa-instagram fa-3x"></i></a></li>
+                <li><a href="https://zh-cn.facebook.com/people/%E9%BB%84%E4%BF%8A%E9%99%B6/100002592968914"><i class="fa fa-facebook-square fa-3x"></i></a></li>
+                <li><a href="https://github.com/bleach103"><i class="fa fa-github-square fa-3x"></i></a></li>
+                <li><a href="Mailto:huangjuntao15@nou.com.cn"><i class="fa fa-envelope-square fa-3x"></i></a></li>
+                <li><a href="https://www.instagram.com/h.juntao/"><i class="fa fa-instagram fa-3x"></i></a></li>
             </ul>
-            <p id="footer">Copyright HJT 2017</p>
+            <p id="footer">Copyright &copy; 2017 HJT All rights reserved.</p>
         </div>
-    </div><!-- #drawer-right -->
+        </div><!-- #drawer-right -->
         <div id="wrapper">
-        <div id="header" class="header-wrapper">
+            <div id="header" class="header-wrapper">
             <div class="header-wrapper-inner">
                 <section class="top">
                     <div class="pull-left">
-                        <h1><a class="logo" href="index.html"><i class="fa fa-camera"></i>&nbsp;PhotosArt</a></h1>
+                        <h1><a class="logo" href="index.html"><i class="fa fa-camera"></i>&nbsp;JunTao摄影博客</a></h1>
                     </div>
                     <div class="pull-right">
                         <a class="toggleDrawer" href="#"><i class="fa fa-bars fa-2x"></i></a>
@@ -80,10 +85,10 @@
                 </section>
                 <section class="center">
                     <div class="slogan">
-                        SLIM &amp; STYLISH
+                        LIGHT &amp; SHADOW
                     </div>
                     <div class="secondary-slogan">
-                        The Flusk Theme By ThemeWagon.
+                        光影之间，瞬刻的美
                     </div>
                 </section>
                 <section class="bottom">
@@ -93,6 +98,14 @@
                 </section>
             </div>
         </div><!-- header -->
-    </div>
+            <div class="content-block" id="portfolio">
+                <div class="content">
+                    <header class="block-heading cleafix">
+                        <h1>最近</h1>
+                        <p>Take a look at some of our recent products</p>
+                    </header>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

@@ -13,6 +13,7 @@ html
 p
 {
     margin: 0 0 20px 0;
+    font: menu;
 }
 img
 {
@@ -32,7 +33,7 @@ a
 h1, h2, h3, h4, h5, h6
 {
     margin: 0 0 15px 0;
-    color: #3A4F52;
+    color: #3A9EAD;
 }
 
 /*drawer*/
@@ -255,4 +256,22 @@ h1, h2, h3, h4, h5, h6
         bottom: 13%;
     }
 
+}
+
+/*content-block*/
+.content-block
+{
+    background:transparent no-repeat center center fixed;
+    background-size:100%;
+    background-size:cover;
+    overflow:hidden;
+    padding: 60px 0;
+}
+.content
+{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 750px;
 }
