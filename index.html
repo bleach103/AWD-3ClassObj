@@ -23,18 +23,37 @@
                     $("#menu-glass").css("right","-400px");
                     $("#drawer-right").css("right","-400px");
                 });
-                $('#scrollToContent').click(function(e){
+                $('#scrollToContent').click(function(e)
+                {
                     e.preventDefault();
                     $.scrollTo("#portfolio", 1000, { offset:-($('#header .top').height()), axis:'y' });
                 });
                  var $container = $('#masonry');
-                 $container.imagesLoaded(function() {
+                 $container.imagesLoaded(function()
+                 {
                      $container.masonry({
                          itemSelector: '.box',
                          gutter: 20,
                          isAnimated: true,
                      });
                  });
+                function setHeaderBackground()
+                {
+                    var Topp = $(window).scrollTop(); // current y position from the top
+                    if (Topp > 300)
+                    {
+                        $('#header .top').addClass('solid');
+                    }
+                    else
+                    {
+                        $('#header .top').removeClass('solid');
+                    }
+                }
+                setHeaderBackground();      //init
+                $(window).scroll( function()
+                {
+                    setHeaderBackground();
+                });
             });
         </script>
     </head>
@@ -42,7 +61,7 @@
         <div id="menu-glass"></div><!-- #drawer-right background-->
         <div id="drawer-right">
             <div class="closeButton">
-            <a class="toggleDrawer" href="#"><i class="fa fa-times-circle fa-2x"></i></a>
+            <a class="toggleDrawer"><i class="fa fa-times-circle fa-2x"></i></a>
         </div>
             <h2>导航</h2>
             <nav>
@@ -86,10 +105,10 @@
             <div class="header-wrapper-inner">
                 <section class="top">
                     <div class="pull-left">
-                        <h1><a class="logo" href="index.html"><i class="fa fa-camera"></i>&nbsp;JunTao摄影博客</a></h1>
+                        <h1><a class="logo" href="#"><i class="fa fa-camera"></i>&nbsp;PhotosArt</a></h1>
                     </div>
                     <div class="pull-right">
-                        <a class="toggleDrawer" href="#"><i class="fa fa-bars fa-2x"></i></a>
+                        <a class="toggleDrawer"><i class="fa fa-bars fa-2x"></i></a>
                     </div>
                 </section>
                 <section class="center">
@@ -112,18 +131,113 @@
                    <h1>最近</h1>
                    <p>这里是近期的未分类作品</p>
                    <div id="masonry" class="container-fluid">
-                       <div class="box"><img src="img/imgs/stary.jpg"></div>
-                       <div class="box"><img src="img/imgs/Alien_wing_by_Ralph_Crützen.jpg"></div>
-                       <div class="box"><img src="img/imgs/Classic_Guitar_Detail_by_Sten_Jørgen_Pettersen.jpg"></div>
-                       <div class="box"><img src="img/imgs/DSC3907_by_Todor_Velichkov.jpg"></div>
-                       <div class="box"><img src="img/imgs/penguin.jpg"></div>
-                       <div class="box"><img src="img/imgs/Yala_mountain_by_Geza_Radics.jpg"></div>
-                       <div class="box"><img src="img/imgs/lightning.jpg"></div>
-                       <div class="box"><img src="img/imgs/IMG_0081_by_Jobin_Babu.jpg"></div>
-                       <div class="box"><img src="img/imgs/IMG_7632_by_Jobin_Babu.jpg"></div>
-                       <div class="box"><img src="img/imgs/featured-builder-bg.jpg"></div>
-                       <div class="box"><img src="img/imgs/larung_gar_by_night_by_Geza_Radics.jpg"></div>
-                       <div class="box"><img src="img/imgs/cat-eye.jpg"></div>
+                       <a href="404.html" class="img-box">
+                           <div class="box">
+                               <img src="img/imgs/stary.jpg">
+                               <div class="post-info">
+                                   <div class="post-basic-info">
+                                       <h3><a href="404.html">Untitle</a></h3>
+                                       <p>Lorem Ipsum is simply dummy text of the printing & typesetting industry.</p>
+                                   </div>
+                               </div>
+                           </div>
+                       </a>
+
+                       <a href="404.html" class="img-box">
+                           <div class="box">
+                               <img src="img/imgs/Alien_wing_by_Ralph_Crützen.jpg">
+                               <div class="post-info">
+                                   <div class="post-basic-info">
+                                       <h3><a href="404.html">Untitle</a></h3>
+                                       <p>Lorem Ipsum is simply dummy text of the printing & typesetting industry.</p>
+                                   </div>
+                               </div>
+                           </div>
+                       </a>
+
+                       <a href="404.html" class="img-box">
+                           <div class="box">
+                               <img src="img/imgs/Classic_Guitar_Detail_by_Sten_Jørgen_Pettersen.jpg">
+                               <div class="post-info">
+                                   <div class="post-basic-info">
+                                       <h3><a href="404.html">Untitle</a></h3>
+                                       <p>Lorem Ipsum is simply dummy text of the printing & typesetting industry.</p>
+                                   </div>
+                               </div>
+                           </div>
+                       </a>
+
+                       <a href="404.html" class="img-box">
+                           <div class="box">
+                               <img src="img/imgs/DSC3907_by_Todor_Velichkov.jpg">
+                               <div class="post-info">
+                                   <div class="post-basic-info">
+                                       <h3><a href="404.html">Untitle</a></h3>
+                                       <p>Lorem Ipsum is simply dummy text of the printing & typesetting industry.</p>
+                                   </div>
+                               </div>
+                           </div>
+                       </a>
+
+                       <a href="404.html" class="img-box">
+                           <div class="box">
+                               <img src="img/imgs/Yala_mountain_by_Geza_Radics.jpg">
+                               <dic class="post-info">
+                                   <div class="post-basic-info">
+                                       <h3><a href="404.html">Untitle</a></h3>
+                                       <p>testtesttesttesttesttesttesttesttesttesttesttesttesttesttest</p>
+                                   </div>
+                               </dic>
+                           </div>
+                       </a>
+
+                       <a href="404.html" class="img-box">
+                           <div class="box">
+                               <img src="img/imgs/IMG_0081_by_Jobin_Babu.jpg">
+                               <div class="post-info">
+                                   <div class="post-basic-info">
+                                       <h3><a href="404.html">Untitle</a></h3>
+                                       <p>Lorem Ipsum is simply dummy text of the printing & typesetting industry.</p>
+                                   </div>
+                               </div>
+                           </div>
+                       </a>
+
+                       <a href="404.html" class="img-box">
+                           <div class="box">
+                               <img src="img/imgs/IMG_7632_by_Jobin_Babu.jpg">
+                               <div class="post-info">
+                                   <div class="post-basic-info">
+                                       <h3><a href="404.html">Untitle</a></h3>
+                                       <p>Lorem Ipsum is simply dummy text of the printing & typesetting industry.</p>
+                                   </div>
+                               </div>
+                           </div>
+                       </a>
+
+                       <a href="404.html" class="img-box">
+                           <div class="box">
+                               <img src="img/imgs/featured-builder-bg.jpg">
+                               <div class="post-info">
+                                   <div class="post-basic-info">
+                                       <h3><a href="404.html">Untitle</a></h3>
+                                       <p>Lorem Ipsum is simply dummy text of the printing & typesetting industry.</p>
+                                   </div>
+                               </div>
+                           </div>
+                       </a>
+
+                       <a href="404.html" class="img-box">
+                           <div class="box">
+                               <img src="img/imgs/larung_gar_by_night_by_Geza_Radics.jpg">
+                               <div class="post-info">
+                                   <div class="post-basic-info">
+                                       <h3><a href="404.html">Untitle</a></h3>
+                                       <p>Lorem Ipsum is simply dummy text of the printing & typesetting industry.</p>
+                                   </div>
+                               </div>
+                           </div>
+                       </a>
 
                    </div>
                 </div>
