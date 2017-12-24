@@ -43,7 +43,6 @@ h1, h2, h3, h4, h5, h6
     right: -400px;
     top: 0;
     bottom: 0;
-    background: url(../img/head.jpg) fixed;
     width: 300px;
     padding: 20px;
     z-index: 998;
@@ -82,6 +81,59 @@ h1, h2, h3, h4, h5, h6
     font: menu;
     font-size: 150%;
 }
+
+#drawer-left
+{
+    position: fixed;
+    left: -400px;
+    top: 0;
+    bottom: 0;
+    background: rgba(35,35,35,0.9);
+    width: 300px;
+    padding: 20px;
+    z-index: 999;
+    font-size: 135%;
+    transition:  all 0.3s;
+}
+
+#drawer-left a
+{
+    color: white;
+}
+#drawer-left a:hover
+{
+    color: #4da7ca;
+}
+#drawer-left .closeButtonl
+{
+    text-align: right;
+}
+#drawer-left h1, #drawer-left h2
+{
+    color: white;
+    font: menu;
+    font-size: 150%;
+}
+#drawer-left .nav
+{
+    list-style: none;
+    font:  menu;
+    font-size: 139%;
+}
+
+#drawer-left .nav-pills>li
+{
+    line-height: 50px;
+}
+
+#drawer-left .nav-pills>li>a
+{
+    font-size: 18px;
+    border-radius: 0;
+}
+
+
+
 #menu-glass .solid
 {
     background: #475B6F;
@@ -149,16 +201,6 @@ h1, h2, h3, h4, h5, h6
     overflow-x: hidden;
 }
 
-@media screen and (max-width: 767px) and (orientation: landscape)
-{
-    #header.header-wrapper
-    {
-        height: auto;
-        min-height: 100vh;
-        padding: 0;
-    }
-}
-
 #header.header-wrapper .header-wrapper-inner
 {
     display: table-cell;
@@ -169,7 +211,7 @@ h1, h2, h3, h4, h5, h6
 #header .top
 {
     position:fixed;
-    top:5%;
+    top:0%;
     width: 100%;
     padding: 30px;
     height: 4%;
@@ -210,18 +252,32 @@ h1, h2, h3, h4, h5, h6
 /*content-block*/
 .content-block
 {
-    background:transparent no-repeat center center fixed;
-    background-size:100%;
-    background-size:cover;
-    overflow:hidden;
-    padding: 60px 0;
+    background: white center center fixed;
+    overflow: hidden;
+    width: 82%;
+    max-width: 52%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .content
 {
-    padding-right: 15px;
-    padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
-    width: 81%;
+    width: 100%;
+}
+.content img
+{
+    width: auto;
+    height: 100%;
+}
+
+@media screen and (max-width: 767px)
+{
+    .content-block
+    {
+        width: 100%;
+        max-width: 100%;
+    }
+
 }
 
