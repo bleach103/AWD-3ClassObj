@@ -2,8 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="068478a5-0b4b-41b6-ba1b-bf3543cef015" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/1111/jiaoben1454/css/back.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/1111/jiaoben1454/css/font-awesome.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/1111/jiaoben1454/css/font/font-awesome.css.bak" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/1111/jiaoben1454/css/font/fontawesome-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/1111/jiaoben1454/css/font/fontawesome-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/1111/jiaoben1454/css/font/fontawesome-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/1111/jiaoben1454/css/maps.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/1111/jiaoben1454/css/zzsc.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/1111/jiaoben1454/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/1111/jiaoben1454/js/google.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/1111/jiaoben1454/js/maps.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/vendor/jquery-3.2.1.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/vendor/modernizr-3.5.0.min.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/css/main.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -37,7 +49,7 @@
       <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="638">
+            <state relative-caret-position="551">
               <caret line="255" column="20" lean-forward="true" selection-start-line="255" selection-start-column="20" selection-end-line="255" selection-end-column="20" />
               <folding />
             </state>
@@ -193,7 +205,7 @@
       <workItem from="1513905633578" duration="12000" />
       <workItem from="1513911871655" duration="11340000" />
       <workItem from="1513997923017" duration="12189000" />
-      <workItem from="1514042728746" duration="6008000" />
+      <workItem from="1514042728746" duration="6315000" />
     </task>
     <task id="LOCAL-00001" summary="add font awesome">
       <created>1513652862813</created>
@@ -251,17 +263,23 @@
       <option name="project" value="LOCAL" />
       <updated>1514080987790</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Merge branch 'master' of https://github.com/bleach103/AWD-3ClassObj&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
+      <created>1514081223677</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1514081223677</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57772000" />
+    <option name="totallyTimeSpent" value="58079000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="29" width="1920" height="1051" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.153125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.153125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -647,7 +665,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
+        <state relative-caret-position="551">
           <caret line="255" column="20" lean-forward="true" selection-start-line="255" selection-start-column="20" selection-end-line="255" selection-end-column="20" />
           <folding />
         </state>
