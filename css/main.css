@@ -155,7 +155,7 @@ h1, h2, h3, h4, h5, h6
     {
         height: auto;
         min-height: 100vh;
-        padding: 0px;
+        padding: 0;
     }
 }
 
@@ -284,7 +284,33 @@ h1, h2, h3, h4, h5, h6
     margin-left: auto;
     width: 81%;
 }
-
+.pair
+{
+    padding: 160px 0;
+}
+.head-intro
+{
+    width: 28%;
+    height: auto;
+    position: relative;
+    left: 5%;
+}
+.head-intro a
+{
+    color: white;
+    font: menu;
+    font-size: 364%;
+}
+#nature
+{
+    background-image: url(../img/nature/1.jpg);
+    color: white;
+}
+#cultrup
+{
+    background-image: url(../img/culturp/11.jpg);
+    color: white;
+}
 
 /*imgBox*/
 
