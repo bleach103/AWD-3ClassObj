@@ -28,7 +28,7 @@ a
 }
 /*a:hover*/
 /*{*/
-    /*color: #4290ae!important;*/
+/*color: #4290ae!important;*/
 /*}*/
 h1, h2, h3, h4, h5, h6
 {
@@ -139,7 +139,7 @@ h1, h2, h3, h4, h5, h6
 
 #header.header-wrapper
 {
-    background: url(../img/head.jpg) no-repeat center center;
+    background: #434343;
     background-size: cover;
     display: table;
     height: 100vh;
@@ -174,7 +174,6 @@ h1, h2, h3, h4, h5, h6
     padding: 30px;
     height: 4%;
     z-index: 500;
-    opacity: 0;
     transition: all .5s;
 }
 
@@ -202,74 +201,10 @@ h1, h2, h3, h4, h5, h6
     margin-bottom: 0;
 }
 
-/*When top is Down*/
-#header .top.solid
-{
-    top: 0%;
-    background: #475B6F;
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
 
 #header .logo, #header .toggleDrawer
 {
     color: white;
-}
-#header .slogan
-{
-    font-size: 4em;
-    margin-bottom: 15px;
-    line-height: 1em;
-    color: white;
-    opacity: 0;
-    transition: all 0.5s;
-}
-#header .secondary-slogan
-{
-    font-size: 1.6em;
-    color: rgba(255,255,255,.5);
-    line-height: 1em;
-    opacity: 0;
-    transition: all 0.5s;
-}
-#header .bottom
-{
-    bottom: 10%;
-    display: block;
-    position: absolute;
-    width: 100%;
-    z-index: 3;
-}
-#header .bottom a img
-{
-    width: 50px;
-}
-#header .bottom a
-{
-    opacity: 0.7;
-}
-#header .bottom a:hover
-{
-    opacity: 1;
-}
-
-@media (max-width: 767px)
-{
-    #header .slogan
-    {
-        font-size: 2.8em;
-    }
-
-    #header .secondary-slogan
-    {
-        font-size: 1.2em;
-    }
-
-    #header .bottom
-    {
-        bottom: 13%;
-    }
-
 }
 
 /*content-block*/
@@ -289,83 +224,4 @@ h1, h2, h3, h4, h5, h6
     margin-left: auto;
     width: 81%;
 }
-.pair
-{
-    padding: 160px 0;
-}
-.head-intro
-{
-    width: 28%;
-    height: auto;
-    position: relative;
-    left: 5%;
-}
-.head-intro a
-{
-    color: white;
-    font: menu;
-    font-size: 364%;
-}
-#nature
-{
-    background-image: url(../img/nature/1.jpg);
-    color: white;
-}
-#cultrup
-{
-    background-image: url(../img/culturp/11.jpg);
-    color: white;
-}
 
-/*imgBox*/
-
-.container-fluid
-{
-    padding: 20px;
-    width: auto;
-}
-
-.box
-{
-    margin-bottom: 20px;
-    float: left;
-    width: 300px;
-    border: 1px solid darkgray;
-}
-.box img
-{
-    max-width: 100%;
-    transition: all 0.2s;
-}
-
-.box img:hover
-{
-    opacity: 0.6;
-}
-
-.post-basic-info
-{
-    padding: 7% 7% 5% 7%;
-    word-wrap: break-word;
-}
-.post-basic-info h3 a
-{
-    font: menu;
-    font-size: 1.2em;
-    margin-bottom: 0.2em;
-    display: block;
-    transition:0.5s all;
-}
-.post-basic-info h3 a:hover
-{
-    color:#B9CB41;
-}
-
-.post-basic-info p
-{
-    font: menu;
-    font-size: 1em;
-    color: #B7B5B5;
-    margin: 0.6em 0;
-    line-height: 1.5em;
-}
