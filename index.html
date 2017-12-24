@@ -9,6 +9,7 @@
         <link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
         <script src="js/jquery-3.2.1.min.js"></script>
         <script src="js/jquery.scrollTo.min.js"></script>
+        <script src="js/masonry-docs.min.js"></script>
         <script>
             $(document).ready(function ()
             {
@@ -26,7 +27,15 @@
                     e.preventDefault();
                     $.scrollTo("#portfolio", 1000, { offset:-($('#header .top').height()), axis:'y' });
                 });
-            })
+                 var $container = $('#masonry');
+                 $container.imagesLoaded(function() {
+                     $container.masonry({
+                         itemSelector: '.box',
+                         gutter: 20,
+                         isAnimated: true,
+                     });
+                 });
+            });
         </script>
     </head>
     <body>
@@ -100,10 +109,23 @@
         </div><!-- header -->
             <div class="content-block" id="portfolio">
                 <div class="content">
-                    <header class="block-heading cleafix">
-                        <h1>最近</h1>
-                        <p>Take a look at some of our recent products</p>
-                    </header>
+                   <h1>最近</h1>
+                   <p>这里是近期的未分类作品</p>
+                   <div id="masonry" class="container-fluid">
+                       <div class="box"><img src="img/imgs/stary.jpg"></div>
+                       <div class="box"><img src="img/imgs/Alien_wing_by_Ralph_Crützen.jpg"></div>
+                       <div class="box"><img src="img/imgs/Classic_Guitar_Detail_by_Sten_Jørgen_Pettersen.jpg"></div>
+                       <div class="box"><img src="img/imgs/DSC3907_by_Todor_Velichkov.jpg"></div>
+                       <div class="box"><img src="img/imgs/penguin.jpg"></div>
+                       <div class="box"><img src="img/imgs/Yala_mountain_by_Geza_Radics.jpg"></div>
+                       <div class="box"><img src="img/imgs/lightning.jpg"></div>
+                       <div class="box"><img src="img/imgs/IMG_0081_by_Jobin_Babu.jpg"></div>
+                       <div class="box"><img src="img/imgs/IMG_7632_by_Jobin_Babu.jpg"></div>
+                       <div class="box"><img src="img/imgs/featured-builder-bg.jpg"></div>
+                       <div class="box"><img src="img/imgs/larung_gar_by_night_by_Geza_Radics.jpg"></div>
+                       <div class="box"><img src="img/imgs/cat-eye.jpg"></div>
+
+                   </div>
                 </div>
             </div>
         </div>

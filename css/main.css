@@ -273,5 +273,24 @@ h1, h2, h3, h4, h5, h6
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
-    width: 750px;
+    width: 52%;
+}
+
+
+/*imgBox*/
+
+.container-fluid
+{
+    padding: 20px;
+    width: auto;
+}
+.box
+{
+    margin-bottom: 20px;
+    float: left;
+    width: 220px;
+}
+.box img
+{
+    max-width: 100%;
 }
