@@ -18,6 +18,7 @@ p
 img
 {
     max-width: 100%;
+    max-height: 761px;
 }
 a
 {
@@ -244,7 +245,7 @@ h1, h2, h3, h4, h5, h6
 }
 
 
-#header .logo, #header .toggleDrawer
+#header .logo, #header .toggleDrawer,#header a
 {
     color: white;
 }
@@ -258,6 +259,9 @@ h1, h2, h3, h4, h5, h6
     max-width: 52%;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
+    top: auto;
+    left: auto;
 }
 .content
 {
@@ -269,6 +273,27 @@ h1, h2, h3, h4, h5, h6
 {
     width: auto;
     height: 100%;
+}
+
+.tab-bar
+{
+    font: menu;
+    text-align: left;
+    font-size: 150%;
+    height: 100px;
+    transition: all 0.5s;
+}
+.tab-bar h3
+{
+    position: relative;
+    left: 4%;
+}
+.tab-bar p
+{
+    text-align: left;
+    position: relative;
+    left: 9%;
+    font-size: 81%;
 }
 
 @media screen and (max-width: 767px)

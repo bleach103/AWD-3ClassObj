@@ -34,7 +34,37 @@
             {
                 $("#drawer-left").css("left","-400px");
             });
-
+            var isclick=false;
+            $(".content").mouseover(function ()
+            {
+                if(!isclick)
+                {
+                    $(".tab-bar").css("height","20px");
+                }
+            }).mouseout(function ()
+            {
+                if(!isclick)
+                {
+                    $(".tab-bar").css("height","0px");
+                }
+            });
+            $(".content").click(function ()
+            {
+                if(!isclick)
+                {
+                    isclick=true;
+                    $(".tab-bar").css("height","100px");
+                }
+                else
+                {
+                    isclick=false;
+                    $(".tab-bar").css("height","0px");
+                }
+            });
+            setTimeout(function ()
+            {
+                $(".tab-bar").css("height","0px");
+            },2000);
         });
     </script>
 </head>
@@ -114,6 +144,8 @@
                     <h1><a class="logo" href="#"><i class="fa fa-camera"></i>&nbsp;PhotosArt</a></h1>
                 </div>
                 <div class="pull-right">
+                    <a class="exif"><i class="fa fa-info-circle fa-2x"></i></a>
+                    <a href="img/head.jpg"><i class="fa fa-arrows-alt fa-2x"></i></a>
                     <a class="toggleDrawer"><i class="fa fa-bars fa-2x"></i></a>
                 </div>
             </section>
@@ -123,8 +155,6 @@
                     <div class="tab-bar">
                         <h3>Title</h3>
                         <p class="intro">testtesttesttesttesttesttesttesttest</p>
-                        <a class="exif"><i class="fa fa-info-circle"></i></a>
-                        <a href="img/head.jpg"><i class="fa fa-arrows-alt"></i></a>
                     </div>
                 </div>
             </div>
