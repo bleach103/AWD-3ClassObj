@@ -1,0 +1,153 @@
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <title>Pic</title>
+            <link rel="shortcut icon" type="image/x-icon" href="../img/icon.jpeg"/>
+            <link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css">
+            <script src="../js/jquery-3.2.1.min.js"></script>
+            <link href="../css/u1.css" rel="stylesheet" type="text/css" media="screen">
+            <style>
+                #menu-glass {
+                    background: url("../img/culturp/16.jpg") fixed;
+                }
+            </style>
+            <script>
+                $(document).ready(function () {
+                    $(".toggleDrawer").click(function () {
+                        $("#menu-glass").css("right", "0px");
+                        $("#drawer-right").css("right", "0px");
+                    });
+                    $(".closeButton").click(function () {
+                        $("#menu-glass").css("right", "-400px");
+                        $("#drawer-right").css("right", "-400px");
+                    });
+                    $(".exif").click(function () {
+                        $("#drawer-left").css("left", "0px")
+                    });
+                    $(".closeButtonl").click(function () {
+                        $("#drawer-left").css("left", "-400px");
+                    });
+                    var isclick = false;
+                    $(".content").mouseover(function () {
+                        if (!isclick) {
+                            $(".tab-bar").css("height", "20px");
+                        }
+                    }).mouseout(function () {
+                        if (!isclick) {
+                            $(".tab-bar").css("height", "0px");
+                        }
+                    });
+                    $(".content").click(function () {
+                        if (!isclick) {
+                            isclick = true;
+                            $(".tab-bar").css("height", "100px");
+                        }
+                        else {
+                            isclick = false;
+                            $(".tab-bar").css("height", "0px");
+                        }
+                    });
+                    setTimeout(function () {
+                        $(".tab-bar").css("height", "0px");
+                    }, 2000);
+                });
+            </script>
+        </head>
+        <body>
+        <div id="menu-glass"></div><!-- #drawer-right background-->
+        <div id="drawer-left">
+            <div class="closeButtonl">
+                <a><i class="fa fa-times-circle fa-2x"></i></a>
+            </div>
+            <h2>Exif</h2>
+            <nav>
+                <ul class="nav nav-pills nav-stacked">
+                    <li>
+                        <a>品牌:SONY</a>
+                    </li>
+                    <li>
+                        <a>型号:SLT-A33</a>
+                    </li>
+                    <li>
+                        <a>焦距:180/10mm</a>
+                    </li>
+                    <li>
+                        <a>快门:1/250s</a>
+                    </li>
+                    <li>
+                        <a>光圈:f/10.0</a>
+                    </li>
+                    <li>
+                        <a>ISO:100</a>
+                    </li>
+                </ul>
+            </nav>
+        </div><!-- #drawer-left -->
+        <div id="drawer-right">
+            <div class="closeButton">
+                <a class="toggleDrawer"><i class="fa fa-times-circle fa-2x"></i></a>
+            </div>
+            <h2>导航</h2>
+            <nav>
+                <ul class="nav nav-pills nav-stacked">
+                    <li>
+                        <a href="index.html"><i class="fa fa-home"></i> 主页</a>
+                    </li>
+                    <li>
+                        <a href="index.html#nature"><i class="fa fa-leaf"></i> 自然</a>
+                    </li>
+                    <li>
+                        <a href="index.html#cultrup"><i class="fa fa-book"></i> 人文</a>
+                    </li>
+                    <li>
+                        <a href="www.me.com/" onclick="window.external.addFavorite(this.href,this.title);return false;"
+                           title='JunTao的摄影博客' rel="sidebar"><i class="fa fa-heart"></i> 收藏我</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/bleach103/AWD-3ClassObj"><i class="fa fa-thumbs-up"></i>
+                            去Github为这个项目点赞</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="social">
+                <h2>联系我</h2>
+                <ul>
+                    <li><a href="https://zh-cn.facebook.com/people/%E9%BB%84%E4%BF%8A%E9%99%B6/100002592968914"><i
+                                    class="fa fa-facebook-square fa-3x"></i></a></li>
+                    <li><a href="https://github.com/bleach103"><i class="fa fa-github-square fa-3x"></i></a></li>
+                    <li><a href="Mailto:huangjuntao15@nou.com.cn"><i class="fa fa-envelope-square fa-3x"></i></a></li>
+                    <li><a href="https://www.instagram.com/h.juntao/"><i class="fa fa-instagram fa-3x"></i></a></li>
+                </ul>
+                <p id="footer">Copyright &copy; 2017 HJT All rights reserved.</p>
+            </div>
+        </div><!-- #drawer-right -->
+        <div id="wrapper">
+            <div id="header" class="header-wrapper">
+                <div class="header-wrapper-inner">
+                    <section class="top">
+                        <div class="pull-left">
+                            <h1><a class="logo" href="#"><i class="fa fa-camera"></i>&nbsp;PhotosArt</a></h1>
+                        </div>
+                        <div class="pull-right">
+                            <a class="exif"><i class="fa fa-info-circle fa-2x"></i></a>
+                            <a href="../img/culturp/16.jpg"><i class="fa fa-arrows-alt fa-2x"></i></a>
+                            <a class="toggleDrawer"><i class="fa fa-bars fa-2x"></i></a>
+                        </div>
+                    </section>
+                    <div class="content-block" id="portfolio">
+                        <div class="content">
+                            <img src="../img/culturp/16.jpg">
+                            <div class="tab-bar">
+                                <h3>校园</h3>
+                                <p class="intro">东软校园</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </body>
+        </html>
+        
